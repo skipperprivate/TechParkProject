@@ -111,10 +111,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="r3W-jg-PaR" firstAttribute="leading" secondItem="eZI-Eu-A7W" secondAttribute="leading" constant="87" id="7U4-hp-05K"/>
                             <constraint firstItem="r3W-jg-PaR" firstAttribute="centerX" secondItem="yTs-gA-261" secondAttribute="centerX" id="Ftw-XH-VHQ"/>
                             <constraint firstItem="r3W-jg-PaR" firstAttribute="centerY" secondItem="yTs-gA-261" secondAttribute="centerY" id="iMp-0t-afu"/>
-                            <constraint firstItem="eZI-Eu-A7W" firstAttribute="trailing" secondItem="r3W-jg-PaR" secondAttribute="trailing" constant="87.5" id="iXb-pn-8FP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eZI-Eu-A7W"/>
                     </view>
