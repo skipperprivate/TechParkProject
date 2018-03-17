@@ -12,6 +12,7 @@ class NewTestViewController: UIViewController {
 
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var testImage: UIImageView!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -91,9 +91,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-jg-PaR">
-                                <rect key="frame" x="32" y="188" width="311" height="311"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter test name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UY7-nr-Sch">
                                 <rect key="frame" x="16" y="124" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
@@ -104,11 +101,20 @@
                                     <action selector="testTitleField:" destination="JHw-lV-LPf" eventType="editingDidEnd" id="2iH-ar-G9f"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-jg-PaR">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2YB-EW-7yn"/>
+                                    <constraint firstAttribute="height" constant="200" id="LeX-xj-76W"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="r3W-jg-PaR" firstAttribute="centerY" secondItem="yTs-gA-261" secondAttribute="centerY" id="mof-40-AHg"/>
-                            <constraint firstItem="r3W-jg-PaR" firstAttribute="centerX" secondItem="yTs-gA-261" secondAttribute="centerX" id="nbK-En-mKL"/>
+                            <constraint firstItem="r3W-jg-PaR" firstAttribute="leading" secondItem="eZI-Eu-A7W" secondAttribute="leading" constant="87" id="7U4-hp-05K"/>
+                            <constraint firstItem="r3W-jg-PaR" firstAttribute="centerX" secondItem="yTs-gA-261" secondAttribute="centerX" id="Ftw-XH-VHQ"/>
+                            <constraint firstItem="r3W-jg-PaR" firstAttribute="centerY" secondItem="yTs-gA-261" secondAttribute="centerY" id="iMp-0t-afu"/>
+                            <constraint firstItem="eZI-Eu-A7W" firstAttribute="trailing" secondItem="r3W-jg-PaR" secondAttribute="trailing" constant="87.5" id="iXb-pn-8FP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eZI-Eu-A7W"/>
                     </view>
@@ -121,6 +127,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="7G7-WA-0sW"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="saveButton" destination="7G7-WA-0sW" id="d1d-7U-ujJ"/>
                         <outlet property="testImage" destination="r3W-jg-PaR" id="iTs-z2-TAg"/>
                         <outlet property="titleTextField" destination="UY7-nr-Sch" id="WlB-Rc-ltq"/>
                     </connections>
@@ -149,5 +156,8 @@
             <point key="canvasLocation" x="5209.6000000000004" y="44.977511244377816"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="addPhoto" width="763" height="770"/>
+    </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
