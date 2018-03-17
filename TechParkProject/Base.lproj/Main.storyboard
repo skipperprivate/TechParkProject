@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TechParkProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIViewController-BYZ-38-t0r" id="BYZ-38-t0r" customClass="ViewController" customModule="TechParkProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +173,7 @@
                         <segue destination="eu9-nS-zdy" kind="relationship" relationship="viewControllers" id="RA7-Lz-Zxg"/>
                         <segue destination="A37-Je-dyY" kind="relationship" relationship="viewControllers" id="wFL-D4-A4i"/>
                         <segue destination="Tgx-9B-bZF" kind="relationship" relationship="viewControllers" id="QSb-X4-asa"/>
-                        <segue destination="dje-ES-Dzr" kind="relationship" relationship="viewControllers" id="qld-LX-GoB"/>
+                        <segue destination="g0L-HR-G6D" kind="relationship" relationship="viewControllers" id="n8u-cT-1jw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LkK-O9-uVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -211,14 +211,14 @@
             <point key="canvasLocation" x="3841" y="46"/>
         </scene>
         <!--Settings-->
-        <scene sceneID="GtZ-Sm-DHz">
+        <scene sceneID="JXN-7k-FRv">
             <objects>
-                <viewControllerPlaceholder storyboardName="Settings" id="dje-ES-Dzr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="g3Y-h2-gd4"/>
+                <viewControllerPlaceholder storyboardName="Settings" id="g0L-HR-G6D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ow9-iw-kbi"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kaj-kc-Xdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQQ-WT-Azs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3841" y="825"/>
+            <point key="canvasLocation" x="2001" y="760"/>
         </scene>
     </scenes>
     <resources>
