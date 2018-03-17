@@ -16,6 +16,10 @@
 		91DE2E4F205A713B005EDDC2 /* FavTests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E4E205A713B005EDDC2 /* FavTests.storyboard */; };
 		91DE2E54205A7174005EDDC2 /* CreateTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E53205A7174005EDDC2 /* CreateTest.storyboard */; };
 		91DE2E56205A718D005EDDC2 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E55205A718D005EDDC2 /* Settings.storyboard */; };
+		91DE2E81205BDCEA005EDDC2 /* MyTestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E80205BDCEA005EDDC2 /* MyTestsTableViewCell.swift */; };
+		91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E82205C4EC8005EDDC2 /* MyTestsTableViewController.swift */; };
+		91DE2E85205C54E1005EDDC2 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E84205C54E1005EDDC2 /* Test.swift */; };
+		91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E86205D134D005EDDC2 /* NewTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		91DE2E4E205A713B005EDDC2 /* FavTests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavTests.storyboard; sourceTree = "<group>"; };
 		91DE2E53205A7174005EDDC2 /* CreateTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateTest.storyboard; sourceTree = "<group>"; };
 		91DE2E55205A718D005EDDC2 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		91DE2E80205BDCEA005EDDC2 /* MyTestsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestsTableViewCell.swift; sourceTree = "<group>"; };
+		91DE2E82205C4EC8005EDDC2 /* MyTestsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestsTableViewController.swift; sourceTree = "<group>"; };
+		91DE2E84205C54E1005EDDC2 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		91DE2E86205D134D005EDDC2 /* NewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,10 @@
 			children = (
 				91DE2E55205A718D005EDDC2 /* Settings.storyboard */,
 				91DE2E53205A7174005EDDC2 /* CreateTest.storyboard */,
+				91DE2E86205D134D005EDDC2 /* NewTestViewController.swift */,
+				91DE2E82205C4EC8005EDDC2 /* MyTestsTableViewController.swift */,
+				91DE2E84205C54E1005EDDC2 /* Test.swift */,
+				91DE2E80205BDCEA005EDDC2 /* MyTestsTableViewCell.swift */,
 				91DE2E4E205A713B005EDDC2 /* FavTests.storyboard */,
 				91DE2E4C205A711F005EDDC2 /* Find Tests.storyboard */,
 				84D4E2AE204AC71C000B9862 /* AppDelegate.swift */,
@@ -152,8 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DE2E81205BDCEA005EDDC2 /* MyTestsTableViewCell.swift in Sources */,
 				84D4E2B1204AC71C000B9862 /* ViewController.swift in Sources */,
+				91DE2E85205C54E1005EDDC2 /* Test.swift in Sources */,
+				91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */,
 				84D4E2AF204AC71C000B9862 /* AppDelegate.swift in Sources */,
+				91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
