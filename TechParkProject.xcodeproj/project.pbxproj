@@ -20,6 +20,9 @@
 		91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E82205C4EC8005EDDC2 /* MyTestsTableViewController.swift */; };
 		91DE2E85205C54E1005EDDC2 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E84205C54E1005EDDC2 /* Test.swift */; };
 		91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E86205D134D005EDDC2 /* NewTestViewController.swift */; };
+		FA8606292062C524003911A3 /* FindTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8606262062C524003911A3 /* FindTextTableViewCell.swift */; };
+		FA86062A2062C524003911A3 /* TestCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8606272062C524003911A3 /* TestCellModel.swift */; };
+		FA86062B2062C524003911A3 /* FindTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8606282062C524003911A3 /* FindTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		91DE2E82205C4EC8005EDDC2 /* MyTestsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestsTableViewController.swift; sourceTree = "<group>"; };
 		91DE2E84205C54E1005EDDC2 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		91DE2E86205D134D005EDDC2 /* NewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTestViewController.swift; sourceTree = "<group>"; };
+		FA8606262062C524003911A3 /* FindTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTextTableViewCell.swift; sourceTree = "<group>"; };
+		FA8606272062C524003911A3 /* TestCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCellModel.swift; sourceTree = "<group>"; };
+		FA8606282062C524003911A3 /* FindTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 				91DE2E4C205A711F005EDDC2 /* Find Tests.storyboard */,
 				84D4E2AE204AC71C000B9862 /* AppDelegate.swift */,
 				84D4E2B0204AC71C000B9862 /* ViewController.swift */,
+				FA8606282062C524003911A3 /* FindTestViewController.swift */,
+				FA8606262062C524003911A3 /* FindTextTableViewCell.swift */,
+				FA8606272062C524003911A3 /* TestCellModel.swift */,
 				84D4E2B2204AC71C000B9862 /* Main.storyboard */,
 				84D4E2B5204AC71C000B9862 /* Assets.xcassets */,
 				84D4E2B7204AC71C000B9862 /* LaunchScreen.storyboard */,
@@ -167,9 +176,12 @@
 				91DE2E81205BDCEA005EDDC2 /* MyTestsTableViewCell.swift in Sources */,
 				84D4E2B1204AC71C000B9862 /* ViewController.swift in Sources */,
 				91DE2E85205C54E1005EDDC2 /* Test.swift in Sources */,
+				FA86062B2062C524003911A3 /* FindTestViewController.swift in Sources */,
 				91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */,
+				FA8606292062C524003911A3 /* FindTextTableViewCell.swift in Sources */,
 				84D4E2AF204AC71C000B9862 /* AppDelegate.swift in Sources */,
 				91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */,
+				FA86062A2062C524003911A3 /* TestCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
