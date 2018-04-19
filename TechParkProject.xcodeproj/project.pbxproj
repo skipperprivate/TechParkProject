@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84195AAE20891DD1000A4BD5 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84195AAD20891DD1000A4BD5 /* Settings.storyboard */; };
+		847A84B820879A850054DAF4 /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A84B720879A850054DAF4 /* AuthorizeViewController.swift */; };
+		847A84BA2087A51C0054DAF4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A84B92087A51C0054DAF4 /* SettingsViewController.swift */; };
 		84D4E2AF204AC71C000B9862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4E2AE204AC71C000B9862 /* AppDelegate.swift */; };
 		84D4E2B1204AC71C000B9862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4E2B0204AC71C000B9862 /* ViewController.swift */; };
 		84D4E2B4204AC71C000B9862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4E2B2204AC71C000B9862 /* Main.storyboard */; };
@@ -15,10 +18,19 @@
 		91DE2E4D205A711F005EDDC2 /* Find Tests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E4C205A711F005EDDC2 /* Find Tests.storyboard */; };
 		91DE2E4F205A713B005EDDC2 /* FavTests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E4E205A713B005EDDC2 /* FavTests.storyboard */; };
 		91DE2E54205A7174005EDDC2 /* CreateTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E53205A7174005EDDC2 /* CreateTest.storyboard */; };
-		91DE2E56205A718D005EDDC2 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E55205A718D005EDDC2 /* Settings.storyboard */; };
+		91DE2E81205BDCEA005EDDC2 /* MyTestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E80205BDCEA005EDDC2 /* MyTestsTableViewCell.swift */; };
+		91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E82205C4EC8005EDDC2 /* MyTestsTableViewController.swift */; };
+		91DE2E85205C54E1005EDDC2 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E84205C54E1005EDDC2 /* Test.swift */; };
+		91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E86205D134D005EDDC2 /* NewTestViewController.swift */; };
+		FA8606292062C524003911A3 /* FindTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8606262062C524003911A3 /* FindTextTableViewCell.swift */; };
+		FA86062A2062C524003911A3 /* TestCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8606272062C524003911A3 /* TestCellModel.swift */; };
+		FA86062B2062C524003911A3 /* FindTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8606282062C524003911A3 /* FindTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84195AAD20891DD1000A4BD5 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		847A84B720879A850054DAF4 /* AuthorizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
+		847A84B92087A51C0054DAF4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		84D4E2AB204AC71C000B9862 /* TechParkProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechParkProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D4E2AE204AC71C000B9862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D4E2B0204AC71C000B9862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +41,13 @@
 		91DE2E4C205A711F005EDDC2 /* Find Tests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Find Tests.storyboard"; sourceTree = "<group>"; };
 		91DE2E4E205A713B005EDDC2 /* FavTests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavTests.storyboard; sourceTree = "<group>"; };
 		91DE2E53205A7174005EDDC2 /* CreateTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateTest.storyboard; sourceTree = "<group>"; };
-		91DE2E55205A718D005EDDC2 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		91DE2E80205BDCEA005EDDC2 /* MyTestsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestsTableViewCell.swift; sourceTree = "<group>"; };
+		91DE2E82205C4EC8005EDDC2 /* MyTestsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestsTableViewController.swift; sourceTree = "<group>"; };
+		91DE2E84205C54E1005EDDC2 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		91DE2E86205D134D005EDDC2 /* NewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTestViewController.swift; sourceTree = "<group>"; };
+		FA8606262062C524003911A3 /* FindTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTextTableViewCell.swift; sourceTree = "<group>"; };
+		FA8606272062C524003911A3 /* TestCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCellModel.swift; sourceTree = "<group>"; };
+		FA8606282062C524003911A3 /* FindTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +80,24 @@
 		84D4E2AD204AC71C000B9862 /* TechParkProject */ = {
 			isa = PBXGroup;
 			children = (
-				91DE2E55205A718D005EDDC2 /* Settings.storyboard */,
+				84195AAD20891DD1000A4BD5 /* Settings.storyboard */,
+				847A84B92087A51C0054DAF4 /* SettingsViewController.swift */,
+				847A84B720879A850054DAF4 /* AuthorizeViewController.swift */,
 				91DE2E53205A7174005EDDC2 /* CreateTest.storyboard */,
+				91DE2E86205D134D005EDDC2 /* NewTestViewController.swift */,
+				91DE2E82205C4EC8005EDDC2 /* MyTestsTableViewController.swift */,
+				91DE2E84205C54E1005EDDC2 /* Test.swift */,
+				91DE2E80205BDCEA005EDDC2 /* MyTestsTableViewCell.swift */,
 				91DE2E4E205A713B005EDDC2 /* FavTests.storyboard */,
 				91DE2E4C205A711F005EDDC2 /* Find Tests.storyboard */,
 				84D4E2AE204AC71C000B9862 /* AppDelegate.swift */,
 				84D4E2B0204AC71C000B9862 /* ViewController.swift */,
-				84D4E2B2204AC71C000B9862 /* Main.storyboard */,
+				FA8606282062C524003911A3 /* FindTestViewController.swift */,
+				FA8606262062C524003911A3 /* FindTextTableViewCell.swift */,
+				FA8606272062C524003911A3 /* TestCellModel.swift */,
 				84D4E2B5204AC71C000B9862 /* Assets.xcassets */,
 				84D4E2B7204AC71C000B9862 /* LaunchScreen.storyboard */,
+				84D4E2B2204AC71C000B9862 /* Main.storyboard */,
 				84D4E2BA204AC71C000B9862 /* Info.plist */,
 			);
 			path = TechParkProject;
@@ -141,7 +168,7 @@
 				84D4E2B6204AC71C000B9862 /* Assets.xcassets in Resources */,
 				84D4E2B4204AC71C000B9862 /* Main.storyboard in Resources */,
 				91DE2E4F205A713B005EDDC2 /* FavTests.storyboard in Resources */,
-				91DE2E56205A718D005EDDC2 /* Settings.storyboard in Resources */,
+				84195AAE20891DD1000A4BD5 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +179,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DE2E81205BDCEA005EDDC2 /* MyTestsTableViewCell.swift in Sources */,
 				84D4E2B1204AC71C000B9862 /* ViewController.swift in Sources */,
+				847A84B820879A850054DAF4 /* AuthorizeViewController.swift in Sources */,
+				91DE2E85205C54E1005EDDC2 /* Test.swift in Sources */,
+				FA86062B2062C524003911A3 /* FindTestViewController.swift in Sources */,
+				91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */,
+				FA8606292062C524003911A3 /* FindTextTableViewCell.swift in Sources */,
 				84D4E2AF204AC71C000B9862 /* AppDelegate.swift in Sources */,
+				91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */,
+				FA86062A2062C524003911A3 /* TestCellModel.swift in Sources */,
+				847A84BA2087A51C0054DAF4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
