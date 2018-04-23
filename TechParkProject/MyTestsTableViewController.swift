@@ -22,9 +22,8 @@ class MyTestsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         loadSampleTests()
-        //let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        //backgroundImage.image = UIImage(named: "background1.png")
-        //self.view.insertSubview(backgroundImage, at: 0)
+        
+        self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color  
     }
 
     override func didReceiveMemoryWarning() {

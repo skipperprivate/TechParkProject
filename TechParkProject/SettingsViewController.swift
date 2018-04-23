@@ -41,9 +41,7 @@ class SettingsViewController: UIViewController {
         testsCreatedLabel.isHidden = true;
         testsCreatedNum.isHidden = true;
 
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "background1.png")
-        self.view.insertSubview(backgroundImage, at: 0)
+        self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color 
         // Do any additional setup after loading the view.
     }
 

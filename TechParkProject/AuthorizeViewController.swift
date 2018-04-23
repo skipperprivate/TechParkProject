@@ -14,6 +14,8 @@ class AuthorizeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color 
+        
         // Do any additional setup after loading the view.
     }
 
