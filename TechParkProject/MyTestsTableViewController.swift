@@ -52,6 +52,7 @@ class MyTestsTableViewController: UITableViewController {
         let cellIdentifier = "MyTestsTableViewCell"
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MyTestsTableViewCell
+        cell.backgroundColor = UIColor(patternImage:UIImage(named:"table_background.png")!)
         
         // Fetches the appropriate meal for the data source layout.
         let test = tests[indexPath.row]
