@@ -1,18 +1,16 @@
 //
-//  NewTestViewController.swift
+//  AuthorizeViewController.swift
 //  TechParkProject
 //
-//  Created by Виталий Малахов on 17.03.2018.
+//  Created by Boss on 18/04/2018.
 //  Copyright © 2018 Boss. All rights reserved.
 //
 
 import UIKit
 
-class NewTestViewController: UIViewController {
-
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var testImage: UIImageView!
-    @IBOutlet weak var saveButton: UIBarButtonItem!
+class AuthorizeViewController: UIViewController {
+    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,13 +24,13 @@ class NewTestViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func finishRegistration(_ sender: Any) {
+    navigationController?.popViewController(animated: true)
+    }
     
+    /*
     // MARK: - Navigation
-     @IBAction func cancel(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
-     }
-     /*
+
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.

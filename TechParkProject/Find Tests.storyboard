@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ov-lB-WTj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,27 +14,118 @@
         <!--Тесты-->
         <scene sceneID="DQi-db-QgA">
             <objects>
-                <viewController id="4ov-lB-WTj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kL9-QS-NSL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <viewController id="4ov-lB-WTj" customClass="FindTestViewController" customModule="TechParkProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xf5-lE-TtX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FindTestTableViewCell" id="TIl-2A-9X1" customClass="FindTextTableViewCell" customModule="TechParkProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TIl-2A-9X1" id="hxS-W3-dBm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmD-m2-Pht">
+                                            <rect key="frame" x="16" y="12" width="289" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzH-c2-T2C">
+                                            <rect key="frame" x="313" y="15" width="46" height="14"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="ButtonCell:" destination="TIl-2A-9X1" eventType="touchUpInside" id="C61-oi-4wG"/>
+                                                <segue destination="gKf-9p-3zO" kind="show" id="J6a-oE-Rds"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zzH-c2-T2C" firstAttribute="top" secondItem="hxS-W3-dBm" secondAttribute="topMargin" constant="4" id="CDB-TV-UfN"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="zzH-c2-T2C" secondAttribute="bottom" constant="4" id="ckv-Ay-NfB"/>
+                                        <constraint firstItem="zzH-c2-T2C" firstAttribute="trailing" secondItem="hxS-W3-dBm" secondAttribute="trailingMargin" id="eRS-bz-RdR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="TitleLable" destination="fmD-m2-Pht" id="aes-Vo-Amx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Тесты" id="8Pi-oV-2gn"/>
+                    <connections>
+                        <outlet property="FindTestTableView" destination="Xf5-lE-TtX" id="ZtF-U2-uhp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ND-xH-ATv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3840.8000000000002" y="-1415.4422788605698"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EGq-bB-jFo">
+            <objects>
+                <viewController id="LzE-iy-zeO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Req-Xq-3Ak">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Поиск тестов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxL-lt-eC8">
-                                <rect key="frame" x="133" y="47" width="108" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfH-ZK-RoH">
+                                <rect key="frame" x="16" y="64" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhZ-PV-cux">
+                                <rect key="frame" x="16" y="93" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-Fu-ARO">
+                                <rect key="frame" x="147" y="617" width="80" height="30"/>
+                                <state key="normal" title="Пройдти"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="J8m-v5-dTc"/>
+                        <constraints>
+                            <constraint firstItem="NhZ-PV-cux" firstAttribute="top" secondItem="dfH-ZK-RoH" secondAttribute="bottom" constant="8" id="1pr-l2-fLo"/>
+                            <constraint firstItem="6rw-1e-VPD" firstAttribute="trailing" secondItem="NhZ-PV-cux" secondAttribute="trailing" constant="16" id="28N-w9-zCd"/>
+                            <constraint firstItem="dfH-ZK-RoH" firstAttribute="leading" secondItem="6rw-1e-VPD" secondAttribute="leading" constant="16" id="2gN-r8-gNs"/>
+                            <constraint firstItem="NhZ-PV-cux" firstAttribute="leading" secondItem="6rw-1e-VPD" secondAttribute="leading" constant="16" id="A9C-Lu-XDz"/>
+                            <constraint firstItem="6rw-1e-VPD" firstAttribute="bottom" secondItem="LpW-Fu-ARO" secondAttribute="bottom" constant="20" id="Dya-3f-uUs"/>
+                            <constraint firstItem="6rw-1e-VPD" firstAttribute="trailing" secondItem="LpW-Fu-ARO" secondAttribute="trailing" constant="148" id="QwU-oL-sue"/>
+                            <constraint firstItem="LpW-Fu-ARO" firstAttribute="leading" secondItem="6rw-1e-VPD" secondAttribute="leading" constant="147" id="aXo-Wf-4Xq"/>
+                            <constraint firstItem="6rw-1e-VPD" firstAttribute="trailing" secondItem="dfH-ZK-RoH" secondAttribute="trailing" constant="16" id="jS4-Dl-nec"/>
+                            <constraint firstItem="dfH-ZK-RoH" firstAttribute="top" secondItem="6rw-1e-VPD" secondAttribute="top" id="sgS-BR-Ws0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6rw-1e-VPD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Тесты" id="8Pi-oV-2gn"/>
+                    <navigationItem key="navigationItem" id="nao-Av-BSi"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5ND-xH-ATv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPU-0S-Mph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3841" y="-1415"/>
+            <point key="canvasLocation" x="5644" y="-1415.4422788605698"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fLR-RV-6DG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gKf-9p-3zO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gY8-Uy-6jI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LzE-iy-zeO" kind="relationship" relationship="rootViewController" id="XxI-tP-xAu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5i-ma-cRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4734.3999999999996" y="-1415.8920539730136"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

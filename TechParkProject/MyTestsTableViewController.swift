@@ -15,12 +15,15 @@ class MyTestsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         loadSampleTests()
+        
+        self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color  
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +52,7 @@ class MyTestsTableViewController: UITableViewController {
         let cellIdentifier = "MyTestsTableViewCell"
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MyTestsTableViewCell
+        cell.backgroundColor = UIColor(patternImage:UIImage(named:"table_background.png")!)
         
         // Fetches the appropriate meal for the data source layout.
         let test = tests[indexPath.row]
