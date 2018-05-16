@@ -20,7 +20,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet var registrationBTN: UIButton!
     @IBOutlet var nickNameLabel: UILabel!
     @IBOutlet var statusLabel: UILabel!
-    @IBOutlet var avatarPhoto: UIImageView!
+    //@IBOutlet var avatarPhoto: UIImageView!
     @IBOutlet var changeAvatarPhotoBTN: UIButton!
     @IBOutlet var testsTakenLabel: UILabel!
     @IBOutlet var testsCreatedLabel: UILabel!
@@ -34,7 +34,7 @@ class SettingsViewController: UIViewController {
         logOutBTN.isHidden = true;
         nickNameLabel.isHidden = true;
         statusLabel.isHidden = true;
-        avatarPhoto.isHidden = true;
+        //avatarPhoto.isHidden = true;
         changeAvatarPhotoBTN.isHidden = true;
         testsTakenLabel.isHidden = true;
         testsTakenNum.isHidden = true;
@@ -62,7 +62,7 @@ class SettingsViewController: UIViewController {
             logOutBTN.isHidden = false;
             nickNameLabel.isHidden = false;
             statusLabel.isHidden = false;
-            avatarPhoto.isHidden = false;
+           // avatarPhoto.isHidden = false;
             changeAvatarPhotoBTN.isHidden = false;
             testsTakenLabel.isHidden = false;
             testsTakenNum.isHidden = false;
@@ -83,7 +83,7 @@ class SettingsViewController: UIViewController {
         logOutBTN.isHidden = true;
         nickNameLabel.isHidden = true;
         statusLabel.isHidden = true;
-        avatarPhoto.isHidden = true;
+        //avatarPhoto.isHidden = true;
         changeAvatarPhotoBTN.isHidden = true;
         testsTakenLabel.isHidden = true;
         testsTakenNum.isHidden = true;
