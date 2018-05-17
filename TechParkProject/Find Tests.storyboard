@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ov-lB-WTj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZzL-KM-H85">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Тесты-->
+        <!--Find Test View Controller-->
         <scene sceneID="DQi-db-QgA">
             <objects>
                 <viewController id="4ov-lB-WTj" customClass="FindTestViewController" customModule="TechParkProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,11 +20,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FindTestTableViewCell" id="TIl-2A-9X1" customClass="FindTextTableViewCell" customModule="TechParkProject" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FindTestTableViewCell" id="TIl-2A-9X1" customClass="FindTextTableViewCell" customModule="TechParkProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TIl-2A-9X1" id="hxS-W3-dBm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmD-m2-Pht">
@@ -34,12 +34,11 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzH-c2-T2C">
-                                            <rect key="frame" x="313" y="15" width="46" height="14"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzH-c2-T2C">
+                                            <rect key="frame" x="313" y="28" width="46" height="1"/>
                                             <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="ButtonCell:" destination="TIl-2A-9X1" eventType="touchUpInside" id="C61-oi-4wG"/>
-                                                <segue destination="gKf-9p-3zO" kind="show" id="J6a-oE-Rds"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -51,18 +50,19 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="TitleLable" destination="fmD-m2-Pht" id="aes-Vo-Amx"/>
+                                    <segue destination="LzE-iy-zeO" kind="push" id="tvJ-hH-f2J"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Тесты" id="8Pi-oV-2gn"/>
+                    <navigationItem key="navigationItem" id="aWH-58-Nxi"/>
                     <connections>
                         <outlet property="FindTestTableView" destination="Xf5-lE-TtX" id="ZtF-U2-uhp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ND-xH-ATv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3840.8000000000002" y="-1415.4422788605698"/>
+            <point key="canvasLocation" x="4780" y="-1415.4422788605698"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EGq-bB-jFo">
@@ -84,9 +84,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-Fu-ARO">
-                                <rect key="frame" x="147" y="617" width="80" height="30"/>
-                                <state key="normal" title="Пройдти"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-Fu-ARO">
+                                <rect key="frame" x="128" y="571" width="118" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Пройти"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -107,25 +108,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPU-0S-Mph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5644" y="-1415.4422788605698"/>
+            <point key="canvasLocation" x="6583.1999999999998" y="-1415.4422788605698"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="fLR-RV-6DG">
+        <!--Тесты-->
+        <scene sceneID="1wg-bb-L1c">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gKf-9p-3zO" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZzL-KM-H85" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Тесты" id="8Pi-oV-2gn"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gY8-Uy-6jI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gxz-Y0-0BN">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="LzE-iy-zeO" kind="relationship" relationship="rootViewController" id="XxI-tP-xAu"/>
+                        <segue destination="4ov-lB-WTj" kind="relationship" relationship="rootViewController" id="hL7-JN-OYl"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E5i-ma-cRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wfx-Fp-8C2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4734.3999999999996" y="-1415.8920539730136"/>
+            <point key="canvasLocation" x="3840.8000000000002" y="-1415.4422788605698"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

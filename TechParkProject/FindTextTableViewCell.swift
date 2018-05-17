@@ -14,6 +14,9 @@ class FindTextTableViewCell: UITableViewCell {
     @IBAction func ButtonCell(_ sender: Any) {
     }
     
+    @IBAction func back(_ sender: UIButton) {
+    }
+    
     func fillCell(with model: TestCellModel) {
         TitleLable.text = model.title
     }

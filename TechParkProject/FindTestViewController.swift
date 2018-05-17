@@ -54,6 +54,11 @@ class FindTestViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    
+   /* @IBAction func finishRegistration(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }*/
+    
 
 
 }
