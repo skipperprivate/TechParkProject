@@ -7,20 +7,21 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingsViewController: UIViewController {
     
-    let authoriseKey = "authorise";
-    var authorisedState = "none";
+   // let authoriseKey = "authorise";
+    //var authorisedState = "none";
     
-    @IBOutlet var _username: UITextField!
-    @IBOutlet var _password: UITextField!
+    @IBOutlet weak var _username: UITextField!
+    @IBOutlet weak var _password: UITextField!
     @IBOutlet var logOutBTN: UIButton!
     @IBOutlet var loginBTN: UIButton!
     @IBOutlet var registrationBTN: UIButton!
     @IBOutlet var nickNameLabel: UILabel!
     @IBOutlet var statusLabel: UILabel!
-    @IBOutlet var avatarPhoto: UIImageView!
+    //@IBOutlet var avatarPhoto: UIImageView!
     @IBOutlet var changeAvatarPhotoBTN: UIButton!
     @IBOutlet var testsTakenLabel: UILabel!
     @IBOutlet var testsCreatedLabel: UILabel!
@@ -31,10 +32,10 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        logOutBTN.isHidden = true;
+        logOutBTN.isHidden = false;
         nickNameLabel.isHidden = true;
         statusLabel.isHidden = true;
-        avatarPhoto.isHidden = true;
+        //avatarPhoto.isHidden = true;
         changeAvatarPhotoBTN.isHidden = true;
         testsTakenLabel.isHidden = true;
         testsTakenNum.isHidden = true;
@@ -51,27 +52,35 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func loginBTN(_ sender: Any) {
-        if (_username?.text == "123") && (_password?.text == "321"){
-            authorisedState = authoriseKey;
-            logOutBTN.isHidden = false;
-            _username.isHidden = true;
-            _password.isHidden = true;
-            loginBTN.isHidden = true;
-            registrationBTN.isHidden = true;
-            
-            logOutBTN.isHidden = false;
-            nickNameLabel.isHidden = false;
-            statusLabel.isHidden = false;
-            avatarPhoto.isHidden = false;
-            changeAvatarPhotoBTN.isHidden = false;
-            testsTakenLabel.isHidden = false;
-            testsTakenNum.isHidden = false;
-            testsCreatedLabel.isHidden = false;
-            testsCreatedNum.isHidden = false;
-            
-            testsCreatedNum.text = "777";
-            testsTakenNum.text = "111";
+        
+        guard let email = _username.text else {return}
+        guard let password = _password.text else {return}
+        
+        Auth.auth().signIn(withEmail: email, password: password) { user , error in
+            if error == nil && user != nil {
+                self.dismiss(animated: false, completion: nil)
+                //authorisedState = authoriseKey;
+                //logOutBTN.isHidden = false;
+                /*_username.isHidden = true;
+                _password.isHidden = true;
+                loginBTN.isHidden = true;
+                registrationBTN.isHidden = true;
+                
+                logOutBTN.isHidden = false;
+                nickNameLabel.isHidden = false;
+                statusLabel.isHidden = false;
+                // avatarPhoto.isHidden = false;
+                changeAvatarPhotoBTN.isHidden = false;
+                testsTakenLabel.isHidden = false;
+                testsTakenNum.isHidden = false;
+                testsCreatedLabel.isHidden = false;
+                testsCreatedNum.isHidden = false;
+                
+                testsCreatedNum.text = "777";
+                testsTakenNum.text = "111";*/
+            }
         }
+        
     }
     
     @IBAction func logOutBTN(_ sender: Any) {
@@ -83,7 +92,7 @@ class SettingsViewController: UIViewController {
         logOutBTN.isHidden = true;
         nickNameLabel.isHidden = true;
         statusLabel.isHidden = true;
-        avatarPhoto.isHidden = true;
+        //avatarPhoto.isHidden = true;
         changeAvatarPhotoBTN.isHidden = true;
         testsTakenLabel.isHidden = true;
         testsTakenNum.isHidden = true;

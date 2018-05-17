@@ -15,6 +15,8 @@
 		84D4E2B4204AC71C000B9862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4E2B2204AC71C000B9862 /* Main.storyboard */; };
 		84D4E2B6204AC71C000B9862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D4E2B5204AC71C000B9862 /* Assets.xcassets */; };
 		84D4E2B9204AC71C000B9862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4E2B7204AC71C000B9862 /* LaunchScreen.storyboard */; };
+		8F0EF38320ADD8DF0069142A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F0EF38220ADD8DF0069142A /* GoogleService-Info.plist */; };
+		8F5ECF6D20A4925200FD83FC /* ChangeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECF6C20A4925200FD83FC /* ChangeSettingsViewController.swift */; };
 		91DE2E4D205A711F005EDDC2 /* Find Tests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E4C205A711F005EDDC2 /* Find Tests.storyboard */; };
 		91DE2E4F205A713B005EDDC2 /* FavTests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E4E205A713B005EDDC2 /* FavTests.storyboard */; };
 		91DE2E54205A7174005EDDC2 /* CreateTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DE2E53205A7174005EDDC2 /* CreateTest.storyboard */; };
@@ -22,12 +24,15 @@
 		91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E82205C4EC8005EDDC2 /* MyTestsTableViewController.swift */; };
 		91DE2E85205C54E1005EDDC2 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E84205C54E1005EDDC2 /* Test.swift */; };
 		91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE2E86205D134D005EDDC2 /* NewTestViewController.swift */; };
+		F006FFF949FBCC725DEC389F /* Pods_TechParkProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175B2858658704F661736446 /* Pods_TechParkProject.framework */; };
 		FA8606292062C524003911A3 /* FindTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8606262062C524003911A3 /* FindTextTableViewCell.swift */; };
 		FA86062A2062C524003911A3 /* TestCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8606272062C524003911A3 /* TestCellModel.swift */; };
 		FA86062B2062C524003911A3 /* FindTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8606282062C524003911A3 /* FindTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		175B2858658704F661736446 /* Pods_TechParkProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechParkProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1453F0D857D1965FAAE6D9 /* Pods-TechParkProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechParkProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechParkProject/Pods-TechParkProject.release.xcconfig"; sourceTree = "<group>"; };
 		84195AAD20891DD1000A4BD5 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		847A84B720879A850054DAF4 /* AuthorizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
 		847A84B92087A51C0054DAF4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +43,9 @@
 		84D4E2B5204AC71C000B9862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D4E2B8204AC71C000B9862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D4E2BA204AC71C000B9862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1F65F3EADD1CCF68192F0B /* Pods-TechParkProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechParkProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechParkProject/Pods-TechParkProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0EF38220ADD8DF0069142A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F5ECF6C20A4925200FD83FC /* ChangeSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSettingsViewController.swift; sourceTree = "<group>"; };
 		91DE2E4C205A711F005EDDC2 /* Find Tests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Find Tests.storyboard"; sourceTree = "<group>"; };
 		91DE2E4E205A713B005EDDC2 /* FavTests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavTests.storyboard; sourceTree = "<group>"; };
 		91DE2E53205A7174005EDDC2 /* CreateTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateTest.storyboard; sourceTree = "<group>"; };
@@ -55,17 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F006FFF949FBCC725DEC389F /* Pods_TechParkProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B14B56278CB7302253BC537 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				175B2858658704F661736446 /* Pods_TechParkProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84D4E2A2204AC71C000B9862 = {
 			isa = PBXGroup;
 			children = (
 				84D4E2AD204AC71C000B9862 /* TechParkProject */,
 				84D4E2AC204AC71C000B9862 /* Products */,
+				940084E4628956D26424148C /* Pods */,
+				5B14B56278CB7302253BC537 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				84195AAD20891DD1000A4BD5 /* Settings.storyboard */,
+				8F5ECF6C20A4925200FD83FC /* ChangeSettingsViewController.swift */,
 				847A84B92087A51C0054DAF4 /* SettingsViewController.swift */,
 				847A84B720879A850054DAF4 /* AuthorizeViewController.swift */,
 				91DE2E53205A7174005EDDC2 /* CreateTest.storyboard */,
@@ -99,8 +119,18 @@
 				84D4E2B7204AC71C000B9862 /* LaunchScreen.storyboard */,
 				84D4E2B2204AC71C000B9862 /* Main.storyboard */,
 				84D4E2BA204AC71C000B9862 /* Info.plist */,
+				8F0EF38220ADD8DF0069142A /* GoogleService-Info.plist */,
 			);
 			path = TechParkProject;
+			sourceTree = "<group>";
+		};
+		940084E4628956D26424148C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F65F3EADD1CCF68192F0B /* Pods-TechParkProject.debug.xcconfig */,
+				5D1453F0D857D1965FAAE6D9 /* Pods-TechParkProject.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D4E2BD204AC71C000B9862 /* Build configuration list for PBXNativeTarget "TechParkProject" */;
 			buildPhases = (
+				D4EB790DD653DFAB1BFDB604 /* [CP] Check Pods Manifest.lock */,
 				84D4E2A7204AC71C000B9862 /* Sources */,
 				84D4E2A8204AC71C000B9862 /* Frameworks */,
 				84D4E2A9204AC71C000B9862 /* Resources */,
+				14368C05194DDF2AA9208920 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91DE2E54205A7174005EDDC2 /* CreateTest.storyboard in Resources */,
+				8F0EF38320ADD8DF0069142A /* GoogleService-Info.plist in Resources */,
 				91DE2E4D205A711F005EDDC2 /* Find Tests.storyboard in Resources */,
 				84D4E2B9204AC71C000B9862 /* LaunchScreen.storyboard in Resources */,
 				84D4E2B6204AC71C000B9862 /* Assets.xcassets in Resources */,
@@ -173,6 +206,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14368C05194DDF2AA9208920 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TechParkProject/Pods-TechParkProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechParkProject/Pods-TechParkProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4EB790DD653DFAB1BFDB604 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechParkProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84D4E2A7204AC71C000B9862 /* Sources */ = {
@@ -186,6 +262,7 @@
 				FA86062B2062C524003911A3 /* FindTestViewController.swift in Sources */,
 				91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */,
 				FA8606292062C524003911A3 /* FindTextTableViewCell.swift in Sources */,
+				8F5ECF6D20A4925200FD83FC /* ChangeSettingsViewController.swift in Sources */,
 				84D4E2AF204AC71C000B9862 /* AppDelegate.swift in Sources */,
 				91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */,
 				FA86062A2062C524003911A3 /* TestCellModel.swift in Sources */,
@@ -324,6 +401,7 @@
 		};
 		84D4E2BE204AC71C000B9862 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1F65F3EADD1CCF68192F0B /* Pods-TechParkProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +416,7 @@
 		};
 		84D4E2BF204AC71C000B9862 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D1453F0D857D1965FAAE6D9 /* Pods-TechParkProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
