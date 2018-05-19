@@ -93,16 +93,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlu-4b-Grx">
+                                <rect key="frame" x="23" y="79" width="113" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zd-7O-2DI">
+                                <rect key="frame" x="53" y="182" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nPw-Rh-CQN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="0c9-J5-AMy"/>
                     <connections>
+                        <outlet property="avatarPhoto" destination="Rlu-4b-Grx" id="0hf-6n-ebS"/>
                         <outlet property="changeAvatarPhotoBTN" destination="fHw-pA-x4W" id="COF-HD-14L"/>
                         <outlet property="logOutBTN" destination="ub3-Sj-2T8" id="Eue-FE-A3g"/>
                         <outlet property="nickNameLabel" destination="e3t-lU-xm4" id="B6F-gc-1Jj"/>
                         <outlet property="statusLabel" destination="7Ra-Yc-6ty" id="MOm-Ed-nOi"/>
+                        <outlet property="taptoChange" destination="4Zd-7O-2DI" id="IcJ-yW-CSX"/>
                         <outlet property="testsCreatedLabel" destination="PV9-OF-Lmu" id="cbY-Wj-haP"/>
                         <outlet property="testsCreatedNum" destination="7IN-CZ-PHQ" id="8eU-ce-xQw"/>
                         <outlet property="testsTakenLabel" destination="O1v-UD-W8t" id="Dz8-tc-gl8"/>

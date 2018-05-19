@@ -40,10 +40,22 @@ class MainViewController: UIViewController {
             self.dismiss(animated: false, completion: nil)
               print("Login!")
            // }
-          }
+          
+           } else {
+            //self.ResetForm()
+            }
         }
         
     }
+    
+    
+    func ResetForm() {
+        let alert = UIAlertController(title: "Error loggin in", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

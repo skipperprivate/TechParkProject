@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseStorage
 
 class SettingsViewController: UIViewController {
     
@@ -21,26 +22,59 @@ class SettingsViewController: UIViewController {
     @IBOutlet var registrationBTN: UIButton!
     @IBOutlet var nickNameLabel: UILabel!
     @IBOutlet var statusLabel: UILabel!
-    //@IBOutlet var avatarPhoto: UIImageView!
     @IBOutlet var changeAvatarPhotoBTN: UIButton!
     @IBOutlet var testsTakenLabel: UILabel!
     @IBOutlet var testsCreatedLabel: UILabel!
     @IBOutlet var testsTakenNum: UILabel!
     @IBOutlet var testsCreatedNum: UILabel!
     
+    @IBOutlet weak var avatarPhoto: UIImageView!
+    @IBOutlet weak var taptoChange: UIButton!
     
+    var imagePicker:UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color 
         // Do any additional setup after loading the view.
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        taptoChange.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
+        
+      //  self.uploadProfileImage(<#T##image: UIImage##UIImage#>, completion: <#T##((String?) -> ())##((String?) -> ())##(String?) -> ()#>)
+    }
+    
+    @objc func openImagePicker(_ sender:Any){
+        self.present(imagePicker, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+   /* func uploadProfileImage(_ image:UIImage, completion: @escaping ((_ url:String?)->())) {
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        let storageRef = Storage.storage().reference().child("user/\(uid)")
+        
+        guard let imageData = UIImageJPEGRepresentation(image, 0.75) else {return}
+        
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpg"
+        
+        
+        storageRef.putData(imageData, metadata: metaData) { metaData , error in
+            if error == nil, metaData != nil {
+                if let url = metaData?.downloadURL()?.absoluteString{
+                    
+                }
+            } else {completion(nil)}
+        }
+    }*/
     
     
     @IBAction func logOutBTN(_ sender: Any) {
@@ -59,3 +93,27 @@ class SettingsViewController: UIViewController {
     */
 
 }
+
+
+extension SettingsViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
+            self.avatarPhoto.image = pickedImage
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+}
+
+
+
+
+
+
+
+
