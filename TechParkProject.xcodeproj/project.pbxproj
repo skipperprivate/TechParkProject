@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		84195AAE20891DD1000A4BD5 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84195AAD20891DD1000A4BD5 /* Settings.storyboard */; };
+		8446965A20B1D9E1002E43CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8446965920B1D9E1002E43CF /* GoogleService-Info.plist */; };
 		847A84BA2087A51C0054DAF4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A84B92087A51C0054DAF4 /* SettingsViewController.swift */; };
 		84D4E2AF204AC71C000B9862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4E2AE204AC71C000B9862 /* AppDelegate.swift */; };
 		84D4E2B1204AC71C000B9862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4E2B0204AC71C000B9862 /* ViewController.swift */; };
 		84D4E2B4204AC71C000B9862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4E2B2204AC71C000B9862 /* Main.storyboard */; };
 		84D4E2B6204AC71C000B9862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D4E2B5204AC71C000B9862 /* Assets.xcassets */; };
 		84D4E2B9204AC71C000B9862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4E2B7204AC71C000B9862 /* LaunchScreen.storyboard */; };
-		8F0EF38320ADD8DF0069142A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F0EF38220ADD8DF0069142A /* GoogleService-Info.plist */; };
 		8F5ECF6D20A4925200FD83FC /* ChangeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECF6C20A4925200FD83FC /* ChangeSettingsViewController.swift */; };
 		8F89E57A20AF2D3C00CEE27D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E57920AF2D3C00CEE27D /* MainViewController.swift */; };
 		8F89E57E20AF368300CEE27D /* RegistrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E57D20AF368300CEE27D /* RegistrViewController.swift */; };
@@ -36,6 +36,7 @@
 		175B2858658704F661736446 /* Pods_TechParkProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechParkProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1453F0D857D1965FAAE6D9 /* Pods-TechParkProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechParkProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechParkProject/Pods-TechParkProject.release.xcconfig"; sourceTree = "<group>"; };
 		84195AAD20891DD1000A4BD5 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		8446965920B1D9E1002E43CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		847A84B92087A51C0054DAF4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		84D4E2AB204AC71C000B9862 /* TechParkProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechParkProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D4E2AE204AC71C000B9862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +46,6 @@
 		84D4E2B8204AC71C000B9862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D4E2BA204AC71C000B9862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A1F65F3EADD1CCF68192F0B /* Pods-TechParkProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechParkProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechParkProject/Pods-TechParkProject.debug.xcconfig"; sourceTree = "<group>"; };
-		8F0EF38220ADD8DF0069142A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8F5ECF6C20A4925200FD83FC /* ChangeSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSettingsViewController.swift; sourceTree = "<group>"; };
 		8F89E57920AF2D3C00CEE27D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8F89E57D20AF368300CEE27D /* RegistrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrViewController.swift; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 				8F89E57F20AF5B5F00CEE27D /* HomeTabBarController.swift */,
 				8F89E57920AF2D3C00CEE27D /* MainViewController.swift */,
 				8F89E57D20AF368300CEE27D /* RegistrViewController.swift */,
+				8446965920B1D9E1002E43CF /* GoogleService-Info.plist */,
 				84D4E2BA204AC71C000B9862 /* Info.plist */,
-				8F0EF38220ADD8DF0069142A /* GoogleService-Info.plist */,
 			);
 			path = TechParkProject;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91DE2E54205A7174005EDDC2 /* CreateTest.storyboard in Resources */,
-				8F0EF38320ADD8DF0069142A /* GoogleService-Info.plist in Resources */,
+				8446965A20B1D9E1002E43CF /* GoogleService-Info.plist in Resources */,
 				91DE2E4D205A711F005EDDC2 /* Find Tests.storyboard in Resources */,
 				84D4E2B9204AC71C000B9862 /* LaunchScreen.storyboard in Resources */,
 				84D4E2B6204AC71C000B9862 /* Assets.xcassets in Resources */,

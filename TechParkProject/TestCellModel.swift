@@ -12,6 +12,7 @@ class TestCellModel {
     var title: String?
     var description: String?
     
+    
     init?(title: String, description: String) {
         
         guard !title.isEmpty else {

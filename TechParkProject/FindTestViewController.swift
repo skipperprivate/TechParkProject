@@ -7,16 +7,37 @@
 //
 
 import UIKit
+import Firebase
 
 class FindTestViewController: UIViewController, UITableViewDataSource {
     
     let cellIdentifier = "FindTestTableViewCell"
     @IBOutlet var FindTestTableView: UITableView!
     var TestModelArr = [TestCellModel] ()
+
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        ref = Database.database().reference()
+        
+       // ref.child("test1").child("Q1").observeSingleEvent(of: .value, with: { (snapshot) in
+         //    print("Snapshot:", snapshot.value as! String)
+            ref.child("test1").child("Q1").observeSingleEvent(of: .value, with: {(snapshot) in
+                let value = snapshot.value as? NSDictionary
+                let temp = value?["Answer2"]
+                
+                
+                
+                //let testname = value?["Answer1"] as? String ?? ""
+                print(temp)
+                })
+            //let value = snapshot.value as? NSDictionary
+            //let testname = value?["Answer1"] as? String ?? ""
+            //print(testname)
+       // }
+        
         createModelArray()
         //let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
        // backgroundImage.image = UIImage(named: "background1.png")
