@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var Email1: UITextField!
     @IBOutlet weak var Password1: UITextField!
     @IBOutlet weak var Login: UIButton!
-    
+   
    // var activitiview:UIActivityIndicatorView!
     
     override func viewDidLoad() {
@@ -39,11 +39,25 @@ class MainViewController: UIViewController {
             //  self.performSegue(withIdentifier: "go_home", sender: self)
             self.dismiss(animated: false, completion: nil)
               print("Login!")
+                self.performSegue(withIdentifier: "go_home", sender: self)
            // }
           
            } else {
-            //self.ResetForm()
+                self.shouldPerformSegue(withIdentifier: "go_home", sender: nil)
+                //shouldPerformSegue(withIdentifier: "go_home", sender: self.storyboard)
+                //self.ResetForm()
+                print ("Error loging in: \(error!.localizedDescription)")
+            let alert = UIAlertController(title: "Ошибка входа", message: "Логин или пароль введены неверно", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+            
+                
             }
+            
         }
         
     }
@@ -60,7 +74,7 @@ class MainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if let user = Auth.auth().currentUser {
+        if let user = Auth.auth().currentUser  {
             self.performSegue(withIdentifier: "go_home", sender: self)
         }
     }
