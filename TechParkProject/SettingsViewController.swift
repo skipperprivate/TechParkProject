@@ -44,6 +44,9 @@ class SettingsViewController: UIViewController {
         imagePicker.delegate = self
         taptoChange.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
         
+        
+        nickNameLabel.text = Auth.auth().currentUser?.email
+        
       //  self.uploadProfileImage(<#T##image: UIImage##UIImage#>, completion: <#T##((String?) -> ())##((String?) -> ())##(String?) -> ()#>)
     }
     

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class FindTestViewController: UIViewController, UITableViewDataSource {
     
@@ -22,26 +23,22 @@ class FindTestViewController: UIViewController, UITableViewDataSource {
         
         ref = Database.database().reference()
         
-       // ref.child("test1").child("Q1").observeSingleEvent(of: .value, with: { (snapshot) in
-         //    print("Snapshot:", snapshot.value as! String)
-            ref.child("test1").child("Q1").observeSingleEvent(of: .value, with: {(snapshot) in
+            ref.child("tests").observeSingleEvent(of: .value, with: {(snapshot) in
                 let value = snapshot.value as? NSDictionary
-                let temp = value?["Answer2"]
+                let testname = value?["testname"] as? String ?? ""
+                print(testname)
                 
-                
-                
-                //let testname = value?["Answer1"] as? String ?? ""
-                print(temp)
-                })
-            //let value = snapshot.value as? NSDictionary
-            //let testname = value?["Answer1"] as? String ?? ""
-            //print(testname)
-       // }
+                guard let test2 = TestCellModel(title: testname, description: "Основы устного счета") else {
+                    fatalError("Unable to instantiate test1")
+                }
+               // self.TestModelArr.append(test2)
+            })
         
-        createModelArray()
-        //let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-       // backgroundImage.image = UIImage(named: "background1.png")
-        //self.view.insertSubview(backgroundImage, at: 0)
+        //createModelArray()
+       /// guard let test1 = TestCellModel(title: e, description: "Основы устного счета") else {
+         //   fatalError("Unable to instantiate test1")
+       // }
+      // TestModelArr += [test2]
         self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color 
         
         FindTestTableView.dataSource = self
