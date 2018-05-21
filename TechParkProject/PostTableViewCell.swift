@@ -1,25 +1,20 @@
 //
-//  FindTextTableViewCell.swift
+//  PostTableViewCell.swift
 //  TechParkProject
 //
-//  Created by Aleksey Bgattsev on 18.03.2018.
+//  Created by Oleg on 21.05.2018.
 //  Copyright © 2018 Boss. All rights reserved.
 //
 
 import UIKit
 
-class FindTextTableViewCell: UITableViewCell {
+class PostTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var TitleLable: UILabel!
-    @IBAction func ButtonCell(_ sender: Any) {
-    }
     
-    @IBAction func back(_ sender: UIButton) {
-    }
+    @IBOutlet weak var testnameLabel: UILabel!
+    //@IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var WriteLabel: UILabel!
     
-    func fillCell(with model: TestCellModel) {
-        TitleLable.text = model.title
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,5 +26,11 @@ class FindTextTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    
+    func set(post:Post) {
+        testnameLabel.text = post.author
+        WriteLabel.text = post.text
+    }
+    
 }
