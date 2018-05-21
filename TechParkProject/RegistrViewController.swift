@@ -36,8 +36,16 @@ class RegistrViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password){user, error in
             if error == nil && user != nil {
                 print("User created!")
+                
             } else {
                 print("error! \(error!.localizedDescription)")
+                let alert = UIAlertController(title: "Ошибка ввода", message: "Данные введены неверно", preferredStyle: UIAlertControllerStyle.alert)
+                
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
