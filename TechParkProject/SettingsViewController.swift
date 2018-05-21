@@ -61,21 +61,22 @@ class SettingsViewController: UIViewController {
     
     
    /* func uploadProfileImage(_ image:UIImage, completion: @escaping ((_ url:String?)->())) {
-        guard let uid = Auth.auth().currentUser?.uid else {return}
-        let storageRef = Storage.storage().reference().child("user/\(uid)")
-        
-        guard let imageData = UIImageJPEGRepresentation(image, 0.75) else {return}
-        
-        let metaData = StorageMetadata()
-        metaData.contentType = "image/jpg"
-        
-        
-        storageRef.putData(imageData, metadata: metaData) { metaData , error in
-            if error == nil, metaData != nil {
-                if let url = metaData?.downloadURL()?.absoluteString{
-                    
+        let storageItem = Storage.storage().reference().child("user/\(uid)")
+        storageItem.putData(ImageData, metadata: metadata) { (metadata, error) in
+            if error != nil {
+                print("Couldn't Upload Image")
+            } else {
+                print("Uploaded")
+                storageItem.downloadURL(completion: { (url, error) in
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    if url != nil {
+                        self.SetUpUser(Image: url!.absoluteString)
+                    }
                 }
-            } else {completion(nil)}
+            }
         }
     }*/
     
