@@ -10,6 +10,12 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var testnameLabel: UILabel!
+    //@IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var WriteLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +25,12 @@ class PostTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    func set(post:Post) {
+        testnameLabel.text = post.author
+        WriteLabel.text = post.text
     }
     
 }

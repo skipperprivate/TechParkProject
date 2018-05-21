@@ -15,7 +15,8 @@ class FindTestsViewController: UIViewController , UITableViewDataSource, UITable
     var tableView:UITableView!
     
     var posts = [
-        Post (id: "1", author: "Donald Trump", text: "Bigly!")
+        Post (id: "1", author: "Donald Trump", text: "Bigly!"),
+        Post (id: "2", author: "Donald Trump2", text: "Bigly!"),
     ]
     
     override func viewDidLoad() {
@@ -43,7 +44,7 @@ class FindTestsViewController: UIViewController , UITableViewDataSource, UITable
         
         tableView.reloadData()
         
-       // self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color 
+       // self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,12 +60,14 @@ class FindTestsViewController: UIViewController , UITableViewDataSource, UITable
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return posts.count
+       // return 12
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
+        cell.set(post: posts[indexPath.row])
         return cell
     }
     
