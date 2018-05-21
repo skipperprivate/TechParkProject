@@ -14,11 +14,15 @@ class FindTestsViewController: UIViewController , UITableViewDataSource, UITable
 
     var tableView:UITableView!
     
+    var posts = [
+        Post (id: "1", author: "Donald Trump", text: "Bigly!")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView = UITableView(frame: view.bounds, style: .plain)
-        tableView.backgroundColor = UIColor.blue
+        tableView.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color
         view.addSubview(tableView)
         
         let cellNib = UINib(nibName: "PostTableViewCell", bundle: nil)
@@ -38,6 +42,8 @@ class FindTestsViewController: UIViewController , UITableViewDataSource, UITable
         tableView.dataSource = self
         
         tableView.reloadData()
+        
+       // self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color 
     }
 
     override func didReceiveMemoryWarning() {

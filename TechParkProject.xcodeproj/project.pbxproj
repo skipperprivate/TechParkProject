@@ -20,6 +20,7 @@
 		8F62965520B3223800FB7478 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F62965320B3223800FB7478 /* PostTableViewCell.xib */; };
 		8F62965720B328E100FB7478 /* FindTests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F62965620B328E100FB7478 /* FindTests.storyboard */; };
 		8F62965920B3294700FB7478 /* FindTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F62965820B3294700FB7478 /* FindTestsViewController.swift */; };
+		8F62965C20B3603000FB7478 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F62965B20B3603000FB7478 /* File.swift */; };
 		8F89E57A20AF2D3C00CEE27D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E57920AF2D3C00CEE27D /* MainViewController.swift */; };
 		8F89E57E20AF368300CEE27D /* RegistrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E57D20AF368300CEE27D /* RegistrViewController.swift */; };
 		8F89E58020AF5B5F00CEE27D /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E57F20AF5B5F00CEE27D /* HomeTabBarController.swift */; };
@@ -51,6 +52,7 @@
 		8F62965320B3223800FB7478 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		8F62965620B328E100FB7478 /* FindTests.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindTests.storyboard; sourceTree = "<group>"; };
 		8F62965820B3294700FB7478 /* FindTestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTestsViewController.swift; sourceTree = "<group>"; };
+		8F62965B20B3603000FB7478 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8F89E57920AF2D3C00CEE27D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8F89E57D20AF368300CEE27D /* RegistrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrViewController.swift; sourceTree = "<group>"; };
 		8F89E57F20AF5B5F00CEE27D /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				84D4E2B0204AC71C000B9862 /* ViewController.swift */,
 				8F62965220B3223800FB7478 /* PostTableViewCell.swift */,
 				8F62965320B3223800FB7478 /* PostTableViewCell.xib */,
+				8F62965A20B3600100FB7478 /* Models */,
 				84D4E2B5204AC71C000B9862 /* Assets.xcassets */,
 				84D4E2B7204AC71C000B9862 /* LaunchScreen.storyboard */,
 				84D4E2B2204AC71C000B9862 /* Main.storyboard */,
@@ -128,6 +131,14 @@
 				84D4E2BA204AC71C000B9862 /* Info.plist */,
 			);
 			path = TechParkProject;
+			sourceTree = "<group>";
+		};
+		8F62965A20B3600100FB7478 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F62965B20B3603000FB7478 /* File.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		940084E4628956D26424148C /* Pods */ = {
@@ -273,6 +284,7 @@
 				91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */,
 				8F89E57E20AF368300CEE27D /* RegistrViewController.swift in Sources */,
 				8F5ECF6D20A4925200FD83FC /* ChangeSettingsViewController.swift in Sources */,
+				8F62965C20B3603000FB7478 /* File.swift in Sources */,
 				8F62965920B3294700FB7478 /* FindTestsViewController.swift in Sources */,
 				84D4E2AF204AC71C000B9862 /* AppDelegate.swift in Sources */,
 				91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */,

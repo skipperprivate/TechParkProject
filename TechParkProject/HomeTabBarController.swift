@@ -15,6 +15,7 @@ class HomeTabBarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(patternImage:UIImage(named:"background1.png")!) //background color 
     }
 
     override func didReceiveMemoryWarning() {
