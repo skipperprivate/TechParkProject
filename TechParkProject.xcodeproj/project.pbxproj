@@ -21,6 +21,8 @@
 		8F62965720B328E100FB7478 /* FindTests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F62965620B328E100FB7478 /* FindTests.storyboard */; };
 		8F62965920B3294700FB7478 /* FindTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F62965820B3294700FB7478 /* FindTestsViewController.swift */; };
 		8F62965C20B3603000FB7478 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F62965B20B3603000FB7478 /* File.swift */; };
+		8F82E5B020B4BEE900175C30 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82E5AF20B4BEE900175C30 /* GreetingViewController.swift */; };
+		8F82E5B220B4D18600175C30 /* EveryWeekTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82E5B120B4D18600175C30 /* EveryWeekTestViewController.swift */; };
 		8F89E57A20AF2D3C00CEE27D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E57920AF2D3C00CEE27D /* MainViewController.swift */; };
 		8F89E57E20AF368300CEE27D /* RegistrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E57D20AF368300CEE27D /* RegistrViewController.swift */; };
 		8F89E58020AF5B5F00CEE27D /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89E57F20AF5B5F00CEE27D /* HomeTabBarController.swift */; };
@@ -53,6 +55,8 @@
 		8F62965620B328E100FB7478 /* FindTests.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindTests.storyboard; sourceTree = "<group>"; };
 		8F62965820B3294700FB7478 /* FindTestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTestsViewController.swift; sourceTree = "<group>"; };
 		8F62965B20B3603000FB7478 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		8F82E5AF20B4BEE900175C30 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		8F82E5B120B4D18600175C30 /* EveryWeekTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryWeekTestViewController.swift; sourceTree = "<group>"; };
 		8F89E57920AF2D3C00CEE27D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8F89E57D20AF368300CEE27D /* RegistrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrViewController.swift; sourceTree = "<group>"; };
 		8F89E57F20AF5B5F00CEE27D /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				91DE2E84205C54E1005EDDC2 /* Test.swift */,
 				91DE2E80205BDCEA005EDDC2 /* MyTestsTableViewCell.swift */,
 				91DE2E4E205A713B005EDDC2 /* FavTests.storyboard */,
+				8F82E5B120B4D18600175C30 /* EveryWeekTestViewController.swift */,
+				8F82E5AF20B4BEE900175C30 /* GreetingViewController.swift */,
 				84D4E2AE204AC71C000B9862 /* AppDelegate.swift */,
 				84D4E2B0204AC71C000B9862 /* ViewController.swift */,
 				8F62965220B3223800FB7478 /* PostTableViewCell.swift */,
@@ -281,6 +287,7 @@
 				8F89E58020AF5B5F00CEE27D /* HomeTabBarController.swift in Sources */,
 				84D4E2B1204AC71C000B9862 /* ViewController.swift in Sources */,
 				91DE2E85205C54E1005EDDC2 /* Test.swift in Sources */,
+				8F82E5B220B4D18600175C30 /* EveryWeekTestViewController.swift in Sources */,
 				91DE2E83205C4EC8005EDDC2 /* MyTestsTableViewController.swift in Sources */,
 				8F89E57E20AF368300CEE27D /* RegistrViewController.swift in Sources */,
 				8F5ECF6D20A4925200FD83FC /* ChangeSettingsViewController.swift in Sources */,
@@ -288,6 +295,7 @@
 				8F62965920B3294700FB7478 /* FindTestsViewController.swift in Sources */,
 				84D4E2AF204AC71C000B9862 /* AppDelegate.swift in Sources */,
 				91DE2E87205D134D005EDDC2 /* NewTestViewController.swift in Sources */,
+				8F82E5B020B4BEE900175C30 /* GreetingViewController.swift in Sources */,
 				847A84BA2087A51C0054DAF4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

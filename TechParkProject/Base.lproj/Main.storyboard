@@ -126,7 +126,7 @@
         <scene sceneID="bOz-Z7-GYV">
             <objects>
                 <viewControllerPlaceholder storyboardName="CreateTest" id="Tgx-9B-bZF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="J1i-y7-rFO"/>
+                    <tabBarItem key="tabBarItem" title="" id="J1i-y7-rFO" userLabel="Item"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAe-mj-Bny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
