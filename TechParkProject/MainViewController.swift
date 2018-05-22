@@ -39,10 +39,14 @@ class MainViewController: UIViewController {
             //  self.performSegue(withIdentifier: "go_home", sender: self)
             self.dismiss(animated: false, completion: nil)
               print("Login!")
+                self.performSegue(withIdentifier: "go_home", sender: self)
+            
+            
            // }
           
            } else {
             //self.ResetForm()
+            self.ResetForm()
             }
         }
         
@@ -50,9 +54,10 @@ class MainViewController: UIViewController {
     
     
     func ResetForm() {
-        let alert = UIAlertController(title: "Error loggin in", message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Error", message:"Email and password are incorrect", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title:"OK",style: UIAlertActionStyle.default, handler:nil))
+        
+        self.present(alert,animated:true,completion:nil)
     }
     
     

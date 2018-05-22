@@ -14,7 +14,11 @@ class RegistrViewController: UIViewController {
     @IBOutlet weak var EmailField: UITextField!
     @IBOutlet weak var NickField: UITextField!
     @IBOutlet weak var Pass: UITextField!
+    @IBOutlet weak var CancelBut: UIBarButtonItem!
     
+    @IBAction func backToRoot(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,14 +37,17 @@ class RegistrViewController: UIViewController {
         guard let password = Pass.text else {return}
         guard let email = EmailField.text else {return}
         
-        navigationController?.popViewController(animated: true)
+        //navigationController?.popViewController(animated: true)
         Auth.auth().createUser(withEmail: email, password: password){user, error in
             if error == nil && user != nil {
+               // self.navigationController?.popViewController(animated: true)
                 print("User created!")
+                self.dismiss(animated: true, completion: nil)
             } else {
                 print("error! \(error!.localizedDescription)")
             }
         }
+        //navigationController?.popViewController(animated: true)
     }
     
     /*
