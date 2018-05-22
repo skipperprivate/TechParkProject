@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KgM-Bn-Rhx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aRd-aY-ynL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,7 +39,6 @@
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="Log_In:" destination="aRd-aY-ynL" eventType="touchUpInside" id="RbJ-w5-1UV"/>
-                                    <segue destination="v5R-dH-NM8" kind="showDetail" identifier="go_home" id="LnY-1x-QbO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMn-xy-pZY">
@@ -74,6 +73,7 @@
                         <outlet property="Email1" destination="Te6-Mh-fdP" id="GY6-Os-IPP"/>
                         <outlet property="Login" destination="GGW-aD-PmO" id="aCq-Up-Jfb"/>
                         <outlet property="Password1" destination="llI-Zs-fyR" id="nPk-s7-LjK"/>
+                        <segue destination="v5R-dH-NM8" kind="show" identifier="go_home" id="OeG-fE-oZp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moV-dz-eqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,23 +131,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAe-mj-Bny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3841" y="46"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="KpR-hm-sRB">
-            <objects>
-                <navigationController id="KgM-Bn-Rhx" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="AT0-Ih-jil"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hNe-nt-acG">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="aRd-aY-ynL" kind="relationship" relationship="rootViewController" id="GJa-dc-tT8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zUX-4X-X0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="209" y="53"/>
         </scene>
         <!--Settings-->
         <scene sceneID="JXN-7k-FRv">
@@ -218,12 +201,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6nB-Oz-OCa">
+                                <rect key="frame" x="0.0" y="32" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Registration" id="0yl-fP-66n">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4GN-y0-RBz">
+                                            <connections>
+                                                <action selector="backToRoot:" destination="yhM-0w-vEU" id="YJk-8h-qha"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZDd-EW-tT8"/>
                     </view>
                     <navigationItem key="navigationItem" id="nyA-0t-AG1"/>
                     <connections>
+                        <outlet property="CancelBut" destination="4GN-y0-RBz" id="7t1-eh-INA"/>
                         <outlet property="EmailField" destination="CaH-LT-JDd" id="GWO-I1-xwN"/>
                         <outlet property="NickField" destination="UY8-RE-XZZ" id="xYg-FD-IBm"/>
                         <outlet property="Pass" destination="wBE-Qn-6Uh" id="YgF-74-DXe"/>
